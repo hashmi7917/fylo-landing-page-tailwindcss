@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Logo from './assets/images/logo.svg';
+import FooterLogo from './assets/images/logo-footer.svg';
 import HeroImage from './assets/images/illustration-1.svg';
 import ContentImage from './assets/images/illustration-2.svg';
 import CurveBackgroundMob from './assets/images/bg-curve-mobile.svg';
@@ -120,6 +121,35 @@ function App() {
             Get Started
           </button>
         </form>
+      </div>
+      <div className="w-full flex flex-col justify-between items-start bg-primary-VeryDarkBlue text-left text-neutral-LightGrayishBlue px-8 py-8 font-opensans font-light">
+        <div className="py-4">
+          <img className="py-6" src={FooterLogo} alt="footer logo" />
+          <p className="text-sm py-2">
+            <i class="fa-solid fa-phone-volume mr-2"></i>
+            Phone: +1-543-123-4567
+          </p>
+          <p className="text-sm">
+            <i class="fa-solid fa-square-envelope text-lg mr-2"></i>
+            example@fylo.com
+          </p>
+        </div>
+        <ul className="py-4 text-sm flex flex-col justify-evenly h-40">
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+        <ul className="py-4 text-sm flex flex-col justify-evenly h-40">
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </ul>
+        <div className="flex justify-around w-1/2 self-center text-sm pt-4 pb-6">
+          <i className="fa-brands fa-facebook-f hover:ring-primary-DesaturatedBlue w-7 h-7 text-center ring-white ring-2 rounded-full px-2.8 py-2 cursor-pointer"></i>
+          <i className="fa-brands fa-twitter hover:ring-primary-DesaturatedBlue w-7 h-7 text-center ring-white ring-2 rounded-full px-2.8 py-2 cursor-pointer"></i>
+          <i className="fa-brands fa-instagram hover:ring-primary-DesaturatedBlue w-7 h-7 text-center ring-white ring-2 rounded-full px-2.8 py-2 cursor-pointer"></i>
+        </div>
       </div>
     </div>
   );
