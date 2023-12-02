@@ -8,7 +8,7 @@ export default {
         raleway: ['Raleway', 'sans-serif'],
       },
       fontSize: {
-        md: '16px',
+        xxs: '10px',
       },
       colors: {
         primary: {

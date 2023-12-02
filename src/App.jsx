@@ -14,9 +14,9 @@ function App() {
       <header className="pb-8">
         <nav className="w-full flex justify-between items-center p-4">
           <img className="w-20" src={Logo} alt="logo" />
-          <ul className="flex justify-evenly w-1/2 text-sm font-light text-slate-500">
+          <ul className="flex justify-evenly w-1/2 text-xs font-normal text-primary-DesaturatedBlue">
             <li>Features</li>
-            <li className="px-2">Team</li>
+            <li>Team</li>
             <li>Sign In</li>
           </ul>
         </nav>
@@ -25,24 +25,25 @@ function App() {
             <img className=" mx-auto" src={HeroImage} alt="illustration" />
           </div>
           <div className="w-full tracking-wider p-2">
-            <h1 className="text-2xl font-bold py-6 leading-relaxed text-black">
+            <h1 className="text-2xl font-semibold py-6 leading-relaxed text-primary-VeryDarkBlue">
               All your files in one secure location, accessible anywhere.
             </h1>
-            <p className="text-sm font-light leading-relaxed text-slate-600 pb-8">
+            <p className="text-sm font-light leading-normal text-slate-600 pb-8">
               Fylo stores your most important files in one secure location.
               Access them wherever you need, share and collaborate with friends,
               family, and co-workers.
             </p>
-            <form className="w-full flex flex-col p-1 justify-between h-24">
+            <form className="w-11/12 mx-auto flex flex-col p-1 justify-between pb-12">
               <input
-                className="font-thin text-sm border-2 px-4 py-1.5 rounded-sm"
+                className="font-thin text-xs border-2 placeholder-neutral-LightGray border-neutral-LightGray px-4 py-2 rounded-sm shadow-sm"
                 type="text"
                 name="email"
                 id=""
                 placeholder="Enter your email"
+                required
               />
               <button
-                className="bg-blue-500 text-white text-sm py-2"
+                className="bg-primary-BirghtBlue text-neutral-LightGrayishBlue tracking-wider text-xs py-2.5 mt-4 rounded-sm shadow-xl font-raleway font-bold"
                 type="submit"
               >
                 Get Started
@@ -51,47 +52,47 @@ function App() {
           </div>
         </div>
       </header>
-      <div
-        style={{
-          width: '100%',
-          minHeight: '90vh',
-          backgroundImage: `url(${CurveBackgroundMob})`,
-          backgroundPosition: '51%',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-        }}
-        className="flex flex-col justify-around items-center text-center px-4 pt-8 pb-12"
-      >
+      <div className="w-full flex flex-col justify-around items-center text-center px-4 pt-8 pb-12 bg-neutral-LightGrayishBlue relative">
         <div className="w-full">
+          <img
+            className="w-ful absolute left-0 -top-8"
+            src={CurveBackgroundMob}
+            alt="curve"
+          />
           <img className=" mx-auto" src={ContentImage} alt="illustration" />
         </div>
         <div className="w-full tracking-wider p-2">
-          <h4 className="font-bold py-6 leading-relaxed text-black">
+          <h4 className="text-sm font-bold py-6 leading-relaxed text-primary-VeryDarkBlue">
             Stay productive, wherever you are
           </h4>
-          <p className="text-left text-sm font-light leading-relaxed text-slate-600 pb-8">
+          <p className="text-left text-xs font-light leading-relaxed text-primary-DesaturatedBlue pb-6">
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
           </p>
-          <p className="text-left text-sm font-light leading-relaxed text-slate-600 pb-8">
+          <p className="text-left text-xs font-light leading-relaxed text-slate-600 pb-8">
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required!
           </p>
-          <button className="border-b-2 border-green-500 text-green-500 text-sm font-light">
-            See how Fylo works <i class="fa-solid fa-circle-arrow-right"></i>
-          </button>
-          <div className="w-full shadow-xl py-4 px-6 rounded-md">
+          <div className="pb-8">
+            <button className="border-b-2 border-primary-ModerateCyan text-primary-ModerateCyan text-xs font-light py-2">
+              See how Fylo works{' '}
+              <i className="fa-solid fa-circle-arrow-right"></i>
+            </button>
+          </div>
+          <div className="w-5/6 mx-auto bg-white px-6 rounded-md shadow-xl ring-slate-200 ring-1">
             <img className="py-4" src={QuoateIcon} alt="quoateIcon" />
-            <h6 className="text-left text-xs text-slate-500">
+            <h6 className="text-left text-xxs font-bold text-slate-500 tracking-normal leading-relaxed">
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
               collaboration machine.
             </h6>
             <div className="flex py-4">
-              <img className="w-10 rounded-full" src={Avatar} alt="avatar" />
+              <img className="h-8 rounded-full" src={Avatar} alt="avatar" />
               <div className="text-left px-2">
-                <h6 className="text-sm font-bold">Kyle Burton</h6>
-                <p className="text-xs font-light">Founder & CEO, Huddle</p>
+                <p className="text-xs font-bold">Kyle Burton</p>
+                <p className="text-xxs text-neutral-LightGray -mt-1">
+                  Founder & CEO, Huddle
+                </p>
               </div>
             </div>
           </div>
@@ -108,29 +109,30 @@ function App() {
         </div>
         <form className="w-3/4 flex flex-col p-1 justify-between py-6">
           <input
-            className="font-thin text-xs border-2 px-4 py-1.5 rounded-sm mb-2"
+            className="font-thin text-xs border-2 px-4 py-1.5 rounded-sm mb-2 shadow-md"
             type="text"
             name="email"
             id=""
-            placeholder="Enter your email"
+            placeholder="email@example.com"
+            required
           />
           <button
-            className="bg-blue-500 text-neutral-LightGrayishBlue text-sm py-2"
+            className="bg-primary-BirghtBlue text-neutral-LightGrayishBlue text-xs py-2"
             type="submit"
           >
-            Get Started
+            Get Started For Free
           </button>
         </form>
       </div>
-      <div className="w-full flex flex-col justify-between items-start bg-primary-VeryDarkBlue text-left text-neutral-LightGrayishBlue px-8 py-8 font-opensans font-light">
+      <div className="w-full flex flex-col justify-between items-start bg-primary-VeryDarkBlue text-left text-neutral-LightGray px-8 py-8 font-opensans font-light">
         <div className="py-4">
           <img className="py-6" src={FooterLogo} alt="footer logo" />
           <p className="text-sm py-2">
-            <i class="fa-solid fa-phone-volume mr-2"></i>
+            <i className="fa-solid fa-phone-volume mr-4 text-neutral-LightGrayishBlue"></i>
             Phone: +1-543-123-4567
           </p>
           <p className="text-sm">
-            <i class="fa-solid fa-square-envelope text-lg mr-2"></i>
+            <i className="fa-solid fa-square-envelope text-lg mr-4 text-neutral-LightGrayishBlue"></i>
             example@fylo.com
           </p>
         </div>
@@ -145,7 +147,7 @@ function App() {
           <li>Terms</li>
           <li>Privacy</li>
         </ul>
-        <div className="flex justify-around w-1/2 self-center text-sm pt-4 pb-6">
+        <div className="flex justify-around w-1/2 self-center text-sm pt-4 pb-6 text-white">
           <i className="fa-brands fa-facebook-f hover:ring-primary-DesaturatedBlue w-7 h-7 text-center ring-white ring-2 rounded-full px-2.8 py-2 cursor-pointer"></i>
           <i className="fa-brands fa-twitter hover:ring-primary-DesaturatedBlue w-7 h-7 text-center ring-white ring-2 rounded-full px-2.8 py-2 cursor-pointer"></i>
           <i className="fa-brands fa-instagram hover:ring-primary-DesaturatedBlue w-7 h-7 text-center ring-white ring-2 rounded-full px-2.8 py-2 cursor-pointer"></i>
