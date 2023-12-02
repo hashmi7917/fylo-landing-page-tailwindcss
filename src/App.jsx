@@ -53,12 +53,13 @@ function App() {
       <div
         style={{
           width: '100%',
+          minHeight: '90vh',
           backgroundImage: `url(${CurveBackgroundMob})`,
           backgroundPosition: '51%',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}
-        className="flex flex-col justify-around items-center text-center px-4 pt-8"
+        className="flex flex-col justify-around items-center text-center px-4 pt-8 pb-12"
       >
         <div className="w-full">
           <img className=" mx-auto" src={ContentImage} alt="illustration" />
@@ -78,7 +79,7 @@ function App() {
           <button className="border-b-2 border-green-500 text-green-500 text-sm font-light">
             See how Fylo works <i class="fa-solid fa-circle-arrow-right"></i>
           </button>
-          <div className="w-full shadow-xl p-4 rounded-md ">
+          <div className="w-full shadow-xl py-4 px-6 rounded-md">
             <img className="py-4" src={QuoateIcon} alt="quoateIcon" />
             <h6 className="text-left text-xs text-slate-500">
               Fylo has improved our team productivity by an order of magnitude.
@@ -94,6 +95,31 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex flex-col justify-between items-center w-full bg-primary-DesaturatedBlue text-center p-6 text-neutral-LightGrayishBlue">
+        <div className="px-6 py-4">
+          <h4 className="text-md font-bold">Get early access today</h4>
+          <p className="text-xs pt-4 tracking-wider leading-relaxed px-3">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form className="w-3/4 flex flex-col p-1 justify-between py-6">
+          <input
+            className="font-thin text-xs border-2 px-4 py-1.5 rounded-sm mb-2"
+            type="text"
+            name="email"
+            id=""
+            placeholder="Enter your email"
+          />
+          <button
+            className="bg-blue-500 text-neutral-LightGrayishBlue text-sm py-2"
+            type="submit"
+          >
+            Get Started
+          </button>
+        </form>
       </div>
     </div>
   );
