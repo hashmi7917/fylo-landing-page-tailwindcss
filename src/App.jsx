@@ -62,7 +62,7 @@ function App() {
               alt="curve"
             />
             <img
-              className="xl:block hidden w-full absolute left-0 -top-28"
+              className="xl:block hidden w-full absolute left-0 -top-24"
               src={CurveBackgroundDesktop}
               alt="CurveBackgroundDesktop"
             />
