@@ -62,7 +62,7 @@ function App() {
               alt="curve"
             />
             <img
-              className="xl:block hidden w-full absolute left-0 -top-24"
+              className="xl:block hidden w-full absolute left-0 -top-28 h-40"
               src={CurveBackgroundDesktop}
               alt="CurveBackgroundDesktop"
             />
@@ -108,7 +108,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col xl:flex-row justify-between items-center w-full bg-primary-DesaturatedBlue text-center xl:text-left xl:items-center p-6 text-neutral-LightGrayishBlue xl:px-16">
+      <div className="flex flex-col xl:flex-row justify-between items-center w-full bg-primary-DesaturatedBlue text-center xl:text-left xl:items-center p-6 text-neutral-LightGrayishBlue xl:px-20">
         <div className="px-6 xl:px-0 py-4 xl:w-9/12">
           <h4 className="text-md xl:text-2xl font-bold">
             Get early access today
