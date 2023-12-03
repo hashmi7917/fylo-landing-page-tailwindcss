@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import Logo from './assets/images/logo.svg';
 import FooterLogo from './assets/images/logo-footer.svg';
@@ -16,9 +15,9 @@ function App() {
         <nav className="w-full flex justify-between items-center p-4 xl:p-8 xl:w-11/12 xl:mx-auto ">
           <img className="w-20" src={Logo} alt="logo" />
           <ul className="flex justify-evenly xl:justify-evenly xl:w-1/3 xl:items-center w-1/2 text-xs font-normal text-primary-DesaturatedBlue">
-            <li>Features</li>
-            <li>Team</li>
-            <li>Sign In</li>
+            <li className="cursor-pointer">Features</li>
+            <li className="cursor-pointer">Team</li>
+            <li className="cursor-pointer">Sign In</li>
           </ul>
         </nav>
         <div className="flex flex-col xl:flex-row-reverse justify-around items-center pt-12 text-center xl:text-left px-4">
