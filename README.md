@@ -38,20 +38,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#Desktop
+![Screenshot 2023-12-04 at 11 54 37 AM](https://github.com/hashmi7917/fylo-landing-page-tailwindcss/assets/38833326/fe60a1a7-e131-4688-bdac-b57c63e47b58)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+#Mobile
+![Screenshot 2023-12-04 at 11 55 02 AM](https://github.com/hashmi7917/fylo-landing-page-tailwindcss/assets/38833326/5af2931f-6e92-4411-af72-07f1ac1abb05)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/hashmi7917/fylo-landing-page-tailwindcss)
+- Live Site URL: [Netlify](https://fylo-landing-page-tailwindcss-hashmi.netlify.app/)
 
 ## My process
 
@@ -60,61 +56,53 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [React](https://reactjs.org/) - JS library + Vite
+- [Fontawesome](https://fontawesome.com/icons) - Icons
+- [Tailwind CSS](https://tailwindcomponents.com/cheatsheet/) - Tailwind CSS Cheatsheet
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Tailwind CSS , Flexbox, Layouts
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<nav
+  className="w-full flex justify-between items-center p-4 xl:p-8 xl:w-11/12 xl:mx-auto "
+>
+  <img className="w-20" src="{Logo}" alt="logo" />
+  <ul
+    className="flex justify-evenly xl:justify-evenly xl:w-1/3 xl:items-center w-1/2 text-xs font-normal text-primary-DesaturatedBlue"
+  >
+    <li className="cursor-pointer">Features</li>
+    <li className="cursor-pointer">Team</li>
+    <li className="cursor-pointer">Sign In</li>
+  </ul>
+</nav>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Tailwind CSS, CSS Grids, Flexbox, Layouts
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Tailwind CSS Cheatsheet](https://tailwindcomponents.com/cheatsheet/) - This helped me for easily access to tailwind css. I really liked this pattern and will use it going forward.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Github-Profile](https://github.com/hashmi7917)
+- Frontend Mentor - [@hashmi7917](https://www.frontendmentor.io/profile/hashmi7917)
+- Instagram - [@hashmi.developer](https://www.instagram.com/hashmi.developer/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks to Tailwind CSS Community and Frontend Mentor Community.
